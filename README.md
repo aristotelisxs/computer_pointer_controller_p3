@@ -8,7 +8,7 @@ estimating and using the direction of the eyes and head. Sample output is under 
 [this](https://docs.openvinotoolkit.org/latest/index.html) guide for detailed, step-by-step instructions.
 
 - Secondly, clone the repository with the following command, or copy it from :
-`git clone <?>`
+`git clone https://github.com/aristotelisxs/computer_pointer_controller_p3/`
 
 - (Optional) Create a virtual python environment and install necessary libraries, with the following commands:
 ```buildoutcfg

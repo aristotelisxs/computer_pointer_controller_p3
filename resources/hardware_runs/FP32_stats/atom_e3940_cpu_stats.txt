@@ -1,0 +1,4 @@
+Total inference time, 15.2
+FPS, 3.8815789473684212
+Total model load time, 1.2966980934143066
+Total time,15.173265218734741

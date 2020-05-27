@@ -184,7 +184,7 @@ def start_pipeline(cla, codec):
         # top = os.path.dirname(os.path.realpath(__file__))
         # walktree(top, visit_file)
         logger.error("Cannot locate video file provided. Exiting..")
-        sys.exit(0)
+        sys.exit(1)
     else:
         in_feeder = InputFeeder("video", input_file_path)
 
@@ -270,7 +270,7 @@ if __name__ == '__main__':
         codec = cv2.VideoWriter_fourcc('M', 'J', 'P', 'G')
     else:
         print("Unsupported OS.")
-        sys.exit(0)
+        sys.exit(1)
 
     assert((not args.is_benchmark and mc_lib_loaded) or args.is_benchmark)
     start_pipeline(args, codec)

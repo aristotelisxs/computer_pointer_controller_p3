@@ -71,12 +71,10 @@ class HeadPoseEstimationModel:
                 unsupported_layers = [layer for layer in self.net.layers.keys() if layer not in supported_layers]
 
                 if len(unsupported_layers) > 0:
-                    print("Extension provided still does not support all layers found. Exiting")
-                    sys.exit(0)
+                    raise Exception("Extension provided still does not support all layers found. Exiting")
                 print("Extension supports all layers found")
             else:
-                print("Path to the cpu extension is not provided. Exiting")
-                sys.exit(0)
+                raise Exception("Path to the cpu extension is not provided. Exiting")
 
     def preprocess_input(self, img):
         """
